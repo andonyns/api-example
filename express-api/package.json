@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run unit",
-    "unit": "jest --projects tests/config/unit"
+    "unit": "jest --projects tests/unit",
+    "integration": "jest --projects tests/integration"
   },
   "keywords": [
     "nodejs",
@@ -23,7 +24,10 @@
     "mongoose": "^5.8.10"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^4.1.7",
     "jest": "^29.5.0",
-    "mockingoose": "^2.16.2"
+    "mockingoose": "^2.16.2",
+    "mongodb": "^5.1.0",
+    "supertest": "^6.3.3"
   }
 }

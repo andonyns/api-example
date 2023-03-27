@@ -1,5 +1,4 @@
 const mockingoose = require('mockingoose');
-const express = require("express");
 
 const model = require('../../models/index');
 const controller = require('../tutorial.controller');

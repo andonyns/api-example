@@ -1,4 +1,5 @@
 const {
+  MONGO_URL,
   DB_USER,
   DB_PASSWORD,
   DB_HOST,
@@ -7,5 +8,5 @@ const {
 } = process.env;
 
 module.exports = {
-  url: `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`
+  url: MONGO_URL ?? `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?authSource=admin`
 };

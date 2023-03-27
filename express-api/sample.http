@@ -1,1 +1,9 @@
-https://localhost/8080
+
+POST http://localhost:8080/api/tutorials
+content-type: application/json
+
+{
+    "title": "A",
+    "description": "Desc",
+    "published": "false"
+}
