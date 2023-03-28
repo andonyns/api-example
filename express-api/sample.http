@@ -1,9 +1,12 @@
 
 POST http://localhost:8080/api/tutorials
 content-type: application/json
-
 {
     "title": "A",
     "description": "Desc",
     "published": "false"
 }
+
+###
+
+GET http://localhost:8080/api/tutorials/642305249689185c347b02ad

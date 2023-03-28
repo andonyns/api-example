@@ -4,9 +4,10 @@
   "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
   "main": "server.js",
   "scripts": {
-    "test": "npm run unit",
+    "test": "npm run unit && npm run integration && npm run e2e",
     "unit": "jest --projects tests/unit",
-    "integration": "jest --projects tests/integration"
+    "integration": "jest --projects tests/integration",
+    "e2e": "jest --projects tests/e2e"
   },
   "keywords": [
     "nodejs",
@@ -18,7 +19,9 @@
   "author": "bezkoder",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.3.4",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.10"
@@ -28,6 +31,7 @@
     "jest": "^29.5.0",
     "mockingoose": "^2.16.2",
     "mongodb": "^5.1.0",
-    "supertest": "^6.3.3"
+    "supertest": "^6.3.3",
+    "testcontainers": "^9.3.0"
   }
 }
